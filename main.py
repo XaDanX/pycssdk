@@ -40,6 +40,7 @@ while True:
                 ov.corner_box(w2s_pos[0] + center, w2s_pos[1], width, head + 5, 2, (0.53, 0.12, 0.47), (0, 0, 0))
             else:
                 ent_list.update()
+                player.ent_id = ent_list.player()
 
 
 

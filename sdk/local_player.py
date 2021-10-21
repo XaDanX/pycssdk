@@ -11,3 +11,4 @@ class LocalPlayer(Entity):
         view = self.mem.handle.read_bytes(self.mem.client + dwViewMatrix, 64)
         matrix = struct.unpack("16f", view)
         return matrix
+
