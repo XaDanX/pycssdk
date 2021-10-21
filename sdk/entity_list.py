@@ -10,7 +10,7 @@ class EntityList:
 
     def update(self):
         self.entity_list.clear()
-        for index in range(0, 32):
+        for index in range(1, 32):
             try:
                 ent = self.mem.handle.read_int(self.mem.client + dwEntityList + index * 0x10)
             except pymem.exception.MemoryReadError:
